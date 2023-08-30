@@ -4,3 +4,10 @@ resource "helm_release" "gitea" {
   chart      = "gitea"
   version    = "8.0.0"
 }
+
+resource "helm_release" "forgejo" {
+  name       = "forgejo"
+  repository = "oci://codeberg.org/forgejo-contrib/forgejo"
+  chart      = "forgejo"
+  version    = "0.8.4"
+}
