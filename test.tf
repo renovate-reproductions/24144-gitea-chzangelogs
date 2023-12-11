@@ -9,5 +9,5 @@ resource "helm_release" "forgejo" {
   name       = "forgejo"
   repository = "oci://codeberg.org/forgejo-contrib"
   chart      = "forgejo"
-  version    = "0.8.4"
+  version    = "0.16.2"
 }
